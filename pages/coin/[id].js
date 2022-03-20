@@ -1,8 +1,17 @@
 import styles from '../../styles/Coin.module.css';
-
+import { BsFillArrowLeftCircleFill} from "react-icons/bs";
+import Link from 'next/link';
 const Coin = ({ coin} ) => {
     return (
+        <div className={styles.coin_section}>
+
+       
+        <div className={styles.back}>
+       <Link href='/' passHref><BsFillArrowLeftCircleFill style={{fontSize:"50px"}}/></Link>
+        </div>
         <div className={styles.coin__page}>
+          
+           
             <div className={styles.coin__container}>
                 <img
                     src={coin.image.large}
@@ -15,6 +24,7 @@ const Coin = ({ coin} ) => {
                     {coin.market_data.current_price.usd}
                 </p>
             </div>
+        </div>
         </div>
     );
 };

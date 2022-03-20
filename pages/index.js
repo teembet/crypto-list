@@ -14,7 +14,10 @@ export default function Home({ coinsData }) {
   
   return (
     <div className="coin__app">
+      <div className='search'>
       <SearchBar type='text' placeholder='Search' onChange={handleChange} />
+      </div>
+      
       <CoinList coinsData={filteredCoins} />
     </div>
   )

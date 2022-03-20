@@ -11,28 +11,35 @@ a {
   text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 
 body {
-  background-color: #101012;
+  background-color: #101012 !important;
 }
 
-.coin__app {
+/* .coin__app {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  padding: 20px;
+  margin: 20px;
   align-items: center;
   margin-top: 10px;
   color: #fff;
+} */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
-
 /* Layout CSS */
 .layout {
   height: 100%;
